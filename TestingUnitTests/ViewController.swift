@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        let dsdas = ExampleAPIClient()
+//        dsdas.fetchExample { (dict) in
+//            _ = dict
+//            print("AAAAAAAAAAAAAAAAAAA")
+//        }
     }
 
     override func didReceiveMemoryWarning() {

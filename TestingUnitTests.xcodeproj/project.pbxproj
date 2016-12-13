@@ -12,7 +12,10 @@
 		5F20F9821DFE896600906AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F20F9801DFE896600906AF4 /* Main.storyboard */; };
 		5F20F9841DFE896600906AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F20F9831DFE896600906AF4 /* Assets.xcassets */; };
 		5F20F9871DFE896600906AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F20F9851DFE896600906AF4 /* LaunchScreen.storyboard */; };
-		5F20F9921DFE896600906AF4 /* TestingUnitTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F20F9911DFE896600906AF4 /* TestingUnitTestsTests.swift */; };
+		5F20F99E1DFE8A9200906AF4 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F20F99D1DFE8A9200906AF4 /* Example.swift */; };
+		5F20F9A11DFE8D7B00906AF4 /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F20F9A01DFE8D7B00906AF4 /* ExampleTest.swift */; };
+		5F20F9A31DFEA04F00906AF4 /* ExampleAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F20F9A21DFEA04F00906AF4 /* ExampleAPIClient.swift */; };
+		5F20F9A51DFEA34600906AF4 /* ExampleAPIClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F20F9A41DFEA34600906AF4 /* ExampleAPIClientTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +37,12 @@
 		5F20F9861DFE896600906AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F20F9881DFE896600906AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F20F98D1DFE896600906AF4 /* TestingUnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingUnitTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F20F9911DFE896600906AF4 /* TestingUnitTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingUnitTestsTests.swift; sourceTree = "<group>"; };
 		5F20F9931DFE896600906AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F20F99D1DFE8A9200906AF4 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		5F20F99F1DFE8D7A00906AF4 /* TestingUnitTestsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingUnitTestsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F20F9A01DFE8D7B00906AF4 /* ExampleTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTest.swift; sourceTree = "<group>"; };
+		5F20F9A21DFEA04F00906AF4 /* ExampleAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAPIClient.swift; sourceTree = "<group>"; };
+		5F20F9A41DFEA34600906AF4 /* ExampleAPIClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAPIClientTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 		5F20F97B1DFE896600906AF4 /* TestingUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				5F20F99C1DFE8A7000906AF4 /* Model */,
 				5F20F97C1DFE896600906AF4 /* AppDelegate.swift */,
 				5F20F97E1DFE896600906AF4 /* ViewController.swift */,
 				5F20F9801DFE896600906AF4 /* Main.storyboard */,
@@ -90,10 +98,21 @@
 		5F20F9901DFE896600906AF4 /* TestingUnitTestsTests */ = {
 			isa = PBXGroup;
 			children = (
-				5F20F9911DFE896600906AF4 /* TestingUnitTestsTests.swift */,
 				5F20F9931DFE896600906AF4 /* Info.plist */,
+				5F20F9A01DFE8D7B00906AF4 /* ExampleTest.swift */,
+				5F20F9A41DFEA34600906AF4 /* ExampleAPIClientTest.swift */,
+				5F20F99F1DFE8D7A00906AF4 /* TestingUnitTestsTests-Bridging-Header.h */,
 			);
 			path = TestingUnitTestsTests;
+			sourceTree = "<group>";
+		};
+		5F20F99C1DFE8A7000906AF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F20F99D1DFE8A9200906AF4 /* Example.swift */,
+				5F20F9A21DFEA04F00906AF4 /* ExampleAPIClient.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +171,7 @@
 					5F20F98C1DFE896600906AF4 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = TJ3RW859P3;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5F20F9781DFE896600906AF4;
 					};
@@ -203,6 +223,8 @@
 			files = (
 				5F20F97F1DFE896600906AF4 /* ViewController.swift in Sources */,
 				5F20F97D1DFE896600906AF4 /* AppDelegate.swift in Sources */,
+				5F20F9A31DFEA04F00906AF4 /* ExampleAPIClient.swift in Sources */,
+				5F20F99E1DFE8A9200906AF4 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F20F9921DFE896600906AF4 /* TestingUnitTestsTests.swift in Sources */,
+				5F20F9A51DFEA34600906AF4 /* ExampleAPIClientTest.swift in Sources */,
+				5F20F9A11DFE8D7B00906AF4 /* ExampleTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,11 +389,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TJ3RW859P3;
 				INFOPLIST_FILE = TestingUnitTestsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beginning.TestingUnitTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestingUnitTestsTests/TestingUnitTestsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingUnitTests.app/TestingUnitTests";
 			};
@@ -381,11 +407,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TJ3RW859P3;
 				INFOPLIST_FILE = TestingUnitTestsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beginning.TestingUnitTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestingUnitTestsTests/TestingUnitTestsTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingUnitTests.app/TestingUnitTests";
 			};
